@@ -93,11 +93,13 @@ export function useCatalog() {
         }),
       });
       if (!response.ok) {
-        throw new Error('Server responded with an error');
+        const errorData = await response.json().catch(() => ({}));
+        const serverError = errorData.error || response.statusText || 'Unknown Server Error';
+        throw new Error(`Status ${response.status}: ${serverError}`);
       }
-    } catch (e) {
+    } catch (e: any) {
       console.error('Failed to sync catalog with server:', e);
-      alert('Error: Could not save changes to the server. Your edits are only applied locally for this session.');
+      alert(`Error: Could not save changes to the server. (${e.message})`);
     }
   };
 
