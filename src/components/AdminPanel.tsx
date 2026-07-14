@@ -188,7 +188,7 @@ export default function AdminPanel({
 
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
-    if (passcode === 'mahi123') {
+    if (passcode === 'dhruvbisht01') {
       onToggleAdmin();
       setError('');
       setPasscode('');
