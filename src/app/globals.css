@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg-primary: #FAF7F2;
+  --color-brand-bg-secondary: #F4EEE6;
+  --color-brand-text-primary: #2B2B2B;
+  --color-brand-text-muted: #5A5A5A;
+  --color-brand-accent: #A23E35;
+  --color-brand-accent-hover: #8A3129;
+  --color-brand-gold: #C7A66A;
+  --color-brand-button: #3F2E2A;
+  --color-brand-button-hover: #A23E35;
+  
+  --font-serif: var(--font-cormorant), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  
+  --radius-brand: 16px;
+}
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #2B2B2B;
+}
+
+body {
+  background-color: var(--color-brand-bg-primary);
+  color: var(--color-brand-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Luxury custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7A66A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A23E35;
+}
+
+/* Custom Utility Classes for Luxury Aesthetic */
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 30px -15px rgba(63, 46, 42, 0.08);
+}
+
+.luxury-shadow-hover {
+  box-shadow: 0 20px 40px -20px rgba(162, 62, 53, 0.15);
+}
+
+.luxury-border {
+  border: 1px solid rgba(199, 166, 106, 0.15);
+}
+
+.backdrop-blur-luxury {
+  backdrop-filter: blur(12px);
+  background-color: rgba(250, 247, 242, 0.8);
+}
+
+/* Simple Masonry Layout fallback */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-flow: dense;
+}
+
+.masonry-item-tall {
+  grid-row: span 2;
+}
