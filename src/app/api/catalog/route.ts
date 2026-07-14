@@ -1,30 +1,35 @@
-import { promises as fs } from 'fs';
-import path from 'path';
-import { NextRequest, NextResponse } from 'next/server';
+import { kv } from '@vercel/kv';
+import { NextResponse } from 'next/server';
+import { SEED_PRODUCTS } from '@/data/products';
+import { SEED_SHOWCASE, SEED_COLLECTIONS, SEED_BTS, SEED_INSTAGRAM } from '@/data/content';
 
-const catalogFilePath = path.join(process.cwd(), 'src', 'data', 'catalog.json');
-
-// Force dynamic so Next.js doesn't cache GET request response at build time
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const fileContent = await fs.readFile(catalogFilePath, 'utf-8');
-    const data = JSON.parse(fileContent);
+    let data = await kv.get('catalog');
+    if (!data) {
+      // Fallback seed data if KV database is empty
+      data = {
+        products: SEED_PRODUCTS,
+        showcaseItems: SEED_SHOWCASE,
+        collectionItems: SEED_COLLECTIONS,
+        behindScenesImages: SEED_BTS,
+        instagramPosts: SEED_INSTAGRAM
+      };
+      await kv.set('catalog', data);
+    }
     return NextResponse.json(data);
   } catch (error: any) {
-    console.error('Error reading catalog file:', error);
-    return NextResponse.json(
-      { error: 'Failed to load catalog data from server.' },
-      { status: 500 }
-    );
+    console.error('Failed to read from Vercel KV:', error);
+    return NextResponse.json({ error: 'Failed to read from Vercel KV' }, { status: 500 });
   }
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
     const data = await request.json();
-
+    
     // Basic structure validation
     if (
       !data ||
@@ -40,15 +45,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Write to catalog.json
-    await fs.writeFile(catalogFilePath, JSON.stringify(data, null, 2), 'utf-8');
-    
+    await kv.set('catalog', data);
     return NextResponse.json({ success: true });
   } catch (error: any) {
-    console.error('Error writing catalog file:', error);
-    return NextResponse.json(
-      { error: 'Failed to save catalog data to server.' },
-      { status: 500 }
-    );
+    console.error('Failed to write to Vercel KV:', error);
+    return NextResponse.json({ error: 'Failed to write to Vercel KV' }, { status: 500 });
   }
 }
