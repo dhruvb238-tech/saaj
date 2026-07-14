@@ -221,7 +221,7 @@ export default function AdminPanel({
     const itemOccasions = occasions ? occasions.split(',').map(o => o.trim()).filter(Boolean) : ['Personal Use'];
     const productFields = {
       name, price: Number(price), category, description, images: [uploadedImage],
-      features: ['100% hand-painted by Mahi','Premium artist-grade materials','Sealed with protective varnish','Perfect for gifting and decor'],
+      features: ['100% hand-painted by Mahi', 'Premium artist-grade materials', 'Sealed with protective varnish', 'Perfect for gifting and decor'],
       dimensions, materials, deliveryTime, occasions: itemOccasions, available, featured, newArrival,
     };
     if (editingProduct) { onUpdateProduct({ ...productFields, id: editingProduct.id }); }
