@@ -1,0 +1,233 @@
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Symphony of Terracotta Canvas",
+      "price": 4499,
+      "category": "Canvas Paintings",
+      "description": "An elegant textured acrylic masterpiece featuring warm earthy clay tones, rich cream layers, and delicate hand-applied gold leaf strokes. This painting brings a sophisticated organic warmth and depth to modern minimal interiors.",
+      "images": ["/images/painting-abstract.png"],
+      "features": [
+        "100% hand-painted by Mahi",
+        "Premium 380GSM archival cotton canvas",
+        "Heavy body acrylic textures with palette knife finish",
+        "Finished with a satin UV-protective varnish",
+        "Stretched on premium pinewood bars, ready to hang"
+      ],
+      "dimensions": "18 x 24 inches",
+      "materials": "Cotton Canvas, Heavy Body Acrylics, 24K Gold Leaf",
+      "deliveryTime": "7-10 business days",
+      "available": true,
+      "featured": true,
+      "newArrival": true,
+      "occasions": ["Housewarming", "Wedding Gifts", "Corporate Gifting"]
+    },
+    {
+      "id": "prod-2",
+      "name": "Miniature Cosmic Starry Sky",
+      "price": 1199,
+      "category": "Mini Easel Art",
+      "description": "A charming pocket-sized oil painting capturing the cosmic beauty and deep indigo swirls of a starry night. Perfect for adding a small touch of handcrafted magic to a study desk, bookshelf, or bedside table.",
+      "images": ["/images/easel-starry.png"],
+      "features": [
+        "Individually hand-painted mini canvas",
+        "Comes with an elegant 6-inch pine wood table easel",
+        "Rich oil textures with glowing paint strokes",
+        "Coated with protective glossy varnish",
+        "Signed by the artist on the back"
+      ],
+      "dimensions": "4 x 4 inches (Canvas), 6 inches (Easel height)",
+      "materials": "Mini Stretched Canvas, Premium Oil Paints, Pine Wood",
+      "deliveryTime": "5-7 business days",
+      "available": true,
+      "featured": true,
+      "newArrival": false,
+      "occasions": ["Birthday", "Desk Decor", "Wedding Gifts"]
+    },
+    {
+      "id": "prod-3",
+      "name": "Aura Wooden Coasters (Set of 4)",
+      "price": 899,
+      "category": "Home Decor",
+      "description": "A set of four rustic wooden slab coasters featuring minimalist organic line art and terracotta details. Each piece highlights the natural wood grain and adds a rustic bohemian touch to your coffee table rituals.",
+      "images": ["/images/decor-coasters.png"],
+      "features": [
+        "100% natural sustainably-sourced wood slabs",
+        "Hand-painted abstract line-work design",
+        "Coated with heat and water-resistant food-safe resin",
+        "Durable non-slip backing to protect furniture",
+        "Due to natural wood, each coaster is uniquely shaped"
+      ],
+      "dimensions": "3.8 to 4.2 inches diameter each",
+      "materials": "Natural Acacia Wood Slabs, Acrylic Ink, Protective Resin",
+      "deliveryTime": "4-6 business days",
+      "available": true,
+      "featured": true,
+      "newArrival": true,
+      "occasions": ["Housewarming", "Corporate Gifting", "Hostess Gift"]
+    },
+    {
+      "id": "prod-4",
+      "name": "Heritage Crimson & Gold Diyas",
+      "price": 699,
+      "category": "Festive Collection",
+      "description": "A premium pair of hand-sculpted terracotta clay diyas, elaborately hand-painted with traditional Indian motifs in vibrant crimson, soft white, and brilliant gold dust, perfect for festive celebrations.",
+      "images": ["/images/festive-diyas.png"],
+      "features": [
+        "Handcrafted and painted traditional terracotta clay",
+        "Adorned with gold dust and acrylic line art detailing",
+        "Eco-friendly, reusable, and washable",
+        "Arrives in a beautiful velvet-lined handmade gifting box",
+        "Ideal for festive decor or traditional ceremonies"
+      ],
+      "dimensions": "3.5 x 3.5 inches each",
+      "materials": "Natural Terracotta Clay, Premium Acrylics, Gold Dust",
+      "deliveryTime": "3-5 business days",
+      "available": true,
+      "featured": true,
+      "newArrival": false,
+      "occasions": ["Diwali", "Festive Decor", "Housewarming"]
+    }
+  ],
+  "showcaseItems": [
+    {
+      "id": "show-1",
+      "image": "/images/painting-abstract.png",
+      "title": "Handmade Art That Feels Personal",
+      "subtitle": "Every piece is carefully handcrafted with love to bring warmth, textures, and a timeless aesthetic to your space.",
+      "active": true,
+      "order": 0
+    },
+    {
+      "id": "show-2",
+      "image": "/images/easel-starry.png",
+      "title": "Miniature Worlds, Hand-Painted",
+      "subtitle": "Pocket-sized cosmic easels and floral miniatures — perfect little pieces of handcrafted magic.",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "show-3",
+      "image": "/images/festive-diyas.png",
+      "title": "Festive Pieces Made With Devotion",
+      "subtitle": "Hand-sculpted terracotta and gold-dust detailing for your celebrations and gifting.",
+      "active": true,
+      "order": 2
+    }
+  ],
+  "collectionItems": [
+    {
+      "id": "col-1",
+      "name": "Canvas Paintings",
+      "description": "Original textured acrylics and gold leaf art canvases.",
+      "tag": "Canvas Paintings",
+      "image": "/images/painting-abstract.png",
+      "active": true,
+      "order": 0
+    },
+    {
+      "id": "col-2",
+      "name": "Mini Easel Art",
+      "description": "Cosmic and floral miniatures complete with wooden easels.",
+      "tag": "Mini Easel Art",
+      "image": "/images/easel-starry.png",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "col-3",
+      "name": "Home Decor",
+      "description": "Hand-painted wooden coasters and unique accent pieces.",
+      "tag": "Home Decor",
+      "image": "/images/decor-coasters.png",
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "col-4",
+      "name": "Festive Collection",
+      "description": "Hand-painted terracotta diyas and candle holders.",
+      "tag": "Festive Collection",
+      "image": "/images/festive-diyas.png",
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "col-5",
+      "name": "Custom Orders",
+      "description": "Personalized paintings tailored to your space.",
+      "tag": "Custom",
+      "image": "/images/artist-mahi.png",
+      "active": true,
+      "order": 4
+    }
+  ],
+  "behindScenesImages": [
+    {
+      "id": "bts-1",
+      "image": "/images/artist-mahi.png",
+      "alt": "Mahi painting in her studio",
+      "caption": "In the Studio",
+      "active": true,
+      "order": 0
+    },
+    {
+      "id": "bts-2",
+      "image": "/images/bts-mixing.png",
+      "alt": "Mixing acrylic paints on palette",
+      "caption": "Mixing the Palette",
+      "active": true,
+      "order": 1
+    }
+  ],
+  "instagramPosts": [
+    {
+      "id": "ig-1",
+      "image": "/images/painting-abstract.png",
+      "caption": "Symphony of Terracotta — textured acrylics.",
+      "postUrl": "",
+      "active": true,
+      "order": 0
+    },
+    {
+      "id": "ig-2",
+      "image": "/images/easel-starry.png",
+      "caption": "Mini cosmic easel, starry nights.",
+      "postUrl": "",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "ig-3",
+      "image": "/images/decor-coasters.png",
+      "caption": "Aura wooden coasters set.",
+      "postUrl": "",
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "ig-4",
+      "image": "/images/festive-diyas.png",
+      "caption": "Heritage crimson & gold diyas.",
+      "postUrl": "",
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "ig-5",
+      "image": "/images/artist-mahi.png",
+      "caption": "Behind the canvas with Mahi.",
+      "postUrl": "",
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "ig-6",
+      "image": "/images/bts-mixing.png",
+      "caption": "Palette knife textures in progress.",
+      "postUrl": "",
+      "active": true,
+      "order": 5
+    }
+  ]
+}
